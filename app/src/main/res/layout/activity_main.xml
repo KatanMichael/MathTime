@@ -7,7 +7,7 @@
     android:layout_gravity="top"
     android:orientation="vertical"
     android:padding="25sp"
-
+    android:background="#d6d7d7"
 
 
     xmlns:android="http://schemas.android.com/apk/res/android" >
