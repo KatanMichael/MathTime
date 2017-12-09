@@ -83,6 +83,9 @@ public class MainActivity extends AppCompatActivity
                         String first = value.substring(0, value.indexOf('+'));
                         String second = value.substring(value.indexOf('+') + 1);
                         Plus = false;
+                        Minus = false;
+                        Multi = false;
+                        Div = false;
                         if(first.equals(""))
                         {
                             sum = Integer.parseInt(resultView.getText().toString())
@@ -95,12 +98,14 @@ public class MainActivity extends AppCompatActivity
                     }
                 }
 
-                else if(Minus)
+                if(Minus)
                 {
                     String first=value.substring(0,value.indexOf('-'));
                     String second=value.substring(value.indexOf('-')+1);
-                    Minus=false;
-                    if(first.equals(""))
+                    Plus = false;
+                    Minus = false;
+                    Multi = false;
+                    Div = false;                    if(first.equals(""))
                     {
                         sum = Integer.parseInt(resultView.getText().toString())
                                 - Integer.parseInt(second);
@@ -108,12 +113,14 @@ public class MainActivity extends AppCompatActivity
                     sum=Integer.parseInt(first)- Integer.parseInt(second);
                 }
 
-                else if(Multi)
+                if(Multi)
                 {
                     String first=value.substring(0,value.indexOf('*'));
                     String second=value.substring(value.indexOf('*')+1);
-                    Multi=false;
-                    if(first.equals(""))
+                    Plus = false;
+                    Minus = false;
+                    Multi = false;
+                    Div = false;                    if(first.equals(""))
                     {
                         sum = Integer.parseInt(resultView.getText().toString())
                                 * Integer.parseInt(second);
@@ -122,12 +129,14 @@ public class MainActivity extends AppCompatActivity
                     }
                 }
 
-                else if(Div)
+                if(Div)
                 {
                     String first=value.substring(0,value.indexOf('/'));
                     String second=value.substring(value.indexOf('/')+1);
-                    Div=false;
-                    if(first.equals(""))
+                    Plus = false;
+                    Minus = false;
+                    Multi = false;
+                    Div = false;                    if(first.equals(""))
                     {
                         sum = Integer.parseInt(resultView.getText().toString())
                                 / Integer.parseInt(second);
