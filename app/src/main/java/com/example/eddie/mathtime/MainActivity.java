@@ -121,6 +121,7 @@ public class MainActivity extends AppCompatActivity {
             {
                 TextView val=(TextView) findViewById(R.id.inital_text);
                 val.setText(" ");
+                value="";
 
                 TextView result=(TextView) findViewById(R.id.result);
                 result.setText(" ");
