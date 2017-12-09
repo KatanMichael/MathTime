@@ -6,7 +6,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity
+{
 
 
     int sum=0;
@@ -15,13 +16,14 @@ public class MainActivity extends AppCompatActivity {
     boolean Minus = false;
     boolean Multi=false;
     boolean Div = false;
-
+    TextView resultView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        resultView = findViewById(R.id.result);
 
         value="";
 
@@ -73,10 +75,16 @@ public class MainActivity extends AppCompatActivity {
 
                 if(Plus)
                 {
-                    String first=value.substring(0,value.indexOf('+'));
-                    String second=value.substring(value.indexOf('+')+1);
-                    Plus=false;
-                    sum=Integer.parseInt(first)+ Integer.parseInt(second);
+                    if(resultView.getText().toString() != null)
+                    {
+
+                    }else
+                        {
+                        String first = value.substring(0, value.indexOf('+'));
+                        String second = value.substring(value.indexOf('+') + 1);
+                        Plus = false;
+                        sum = Integer.parseInt(first) + Integer.parseInt(second);
+                    }
                 }
 
                 else if(Minus)
