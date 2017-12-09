@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MathTime</string>
+    <string name="Num0">0</string>
+    <string name="Num1">1</string>
+    <string name="Num2">2</string>
+    <string name="Num3">3</string>
+    <string name="Num4">4</string>
+    <string name="Num5">5</string>
+    <string name="Num6">6</string>
+    <string name="Num7">7</string>
+    <string name="Num8">8</string>
+    <string name="Num9">9</string>
+    <string name="Plus">+</string>
+    <string name="Minus">-</string>
+    <string name="Equal">=</string>
+    <string name="Multi">*</string>
+    <string name="Div">/</string>
+    <string name="inital_text">Waiting for input...</string>
+    <string name="Clear">C</string>
+</resources>
