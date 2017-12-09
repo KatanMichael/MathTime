@@ -69,21 +69,29 @@ public class MainActivity extends AppCompatActivity
 
 
         Button bEqual = findViewById(R.id.equal);
-        bEqual.setOnClickListener(new View.OnClickListener() {
+        bEqual.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view)
+            {
+                    int a , b;
 
                 if(Plus)
                 {
-                    if(resultView.getText().toString() != null)
-                    {
 
-                    }else
                         {
                         String first = value.substring(0, value.indexOf('+'));
                         String second = value.substring(value.indexOf('+') + 1);
                         Plus = false;
-                        sum = Integer.parseInt(first) + Integer.parseInt(second);
+                        if(first.equals(""))
+                        {
+                            sum = Integer.parseInt(resultView.getText().toString())
+                                    + Integer.parseInt(second);
+                        }else
+                        {
+                            sum = Integer.parseInt(first) + Integer.parseInt(second);
+                        }
+
                     }
                 }
 
@@ -92,6 +100,11 @@ public class MainActivity extends AppCompatActivity
                     String first=value.substring(0,value.indexOf('-'));
                     String second=value.substring(value.indexOf('-')+1);
                     Minus=false;
+                    if(first.equals(""))
+                    {
+                        sum = Integer.parseInt(resultView.getText().toString())
+                                - Integer.parseInt(second);
+                    }else
                     sum=Integer.parseInt(first)- Integer.parseInt(second);
                 }
 
@@ -100,7 +113,13 @@ public class MainActivity extends AppCompatActivity
                     String first=value.substring(0,value.indexOf('*'));
                     String second=value.substring(value.indexOf('*')+1);
                     Multi=false;
-                    sum=Integer.parseInt(first)*Integer.parseInt(second);
+                    if(first.equals(""))
+                    {
+                        sum = Integer.parseInt(resultView.getText().toString())
+                                * Integer.parseInt(second);
+                    }else {
+                        sum = Integer.parseInt(first) * Integer.parseInt(second);
+                    }
                 }
 
                 else if(Div)
@@ -108,6 +127,11 @@ public class MainActivity extends AppCompatActivity
                     String first=value.substring(0,value.indexOf('/'));
                     String second=value.substring(value.indexOf('/')+1);
                     Div=false;
+                    if(first.equals(""))
+                    {
+                        sum = Integer.parseInt(resultView.getText().toString())
+                                / Integer.parseInt(second);
+                    }else
                     sum=Integer.parseInt(first)/ Integer.parseInt(second);
                 }
 
@@ -139,7 +163,8 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    private class OpButtonsListener implements View.OnClickListener {
+    private class OpButtonsListener implements View.OnClickListener
+    {
         private char sign;
 
         public OpButtonsListener(char sign) {
@@ -168,17 +193,18 @@ public class MainActivity extends AppCompatActivity
 
 
 
-    private class NumsButtonsListner implements View.OnClickListener{
+    private class NumsButtonsListner implements View.OnClickListener
+    {
 
         private char num;
-        public NumsButtonsListner(char num) {
+        public NumsButtonsListner(char num)
+        {
             this.num=num;
         }
 
         @Override
-        public void onClick(View view) {
-
-
+        public void onClick(View view)
+        {
 
             value = value + num ;
             TextView val = (TextView) findViewById(R.id.inital_text);
