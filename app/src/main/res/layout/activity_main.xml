@@ -1,43 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-<LinearLayout
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="top"
+    android:background="#adcece"
     android:orientation="vertical"
-    android:padding="25sp"
-    android:background="#d6d7d7"
 
 
-    xmlns:android="http://schemas.android.com/apk/res/android" >
+    android:padding="25sp">
 
 
 
     <TextView
+        android:id="@+id/inital_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="25sp"
+        android:layout_gravity="top|center"
         android:layout_marginBottom="10sp"
-        android:layout_gravity="top|center"
+        android:background="@drawable/result_drawable"
         android:padding="25dp"
-        android:textStyle="italic"
+        android:textSize="25sp"
 
-
-        android:id="@+id/inital_text" />
+        android:textStyle="italic" />
 
     <TextView
+        android:id="@+id/result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:gravity="center"
-        android:textColor="#000000"
         android:layout_gravity="top|center"
+        android:background="@drawable/drawable_back"
+        android:gravity="center"
 
         android:padding="25dp"
 
-        android:background="@drawable/drawable_back"
-        android:id="@+id/result" />
+        android:textColor="#000000"
+        android:textSize="30sp" />
 
 
 
@@ -51,12 +50,12 @@
 
 
         <Button
+            android:id="@+id/num_7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Num7"
 
             android:gravity="top|center"
-            android:id="@+id/num_7"
+            android:text="@string/Num7"
             android:textColor="#000000"
             android:textSize="40sp"
             android:textStyle="italic"
@@ -66,33 +65,33 @@
 
 
         <Button
+            android:id="@+id/num_8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Num8"
 
             android:gravity="top|center"
-            android:id="@+id/num_8"
+            android:text="@string/Num8"
             android:textColor="#000000"
             android:textSize="40sp"
             android:textStyle="italic"/>
 
         <Button
+            android:id="@+id/num_9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Num9"
             android:gravity="top|center"
-            android:id="@+id/num_9"
+            android:text="@string/Num9"
             android:textColor="#000000"
             android:textSize="40sp"
             android:textStyle="italic" />
 
 
         <Button
+            android:id="@+id/plus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Plus"
             android:gravity="center"
-            android:id="@+id/plus"
+            android:text="@string/Plus"
             android:textColor="#000000"
             android:textSize="40sp"
             android:textStyle="italic" />
@@ -105,94 +104,94 @@
         >
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Num4"
-
-            android:gravity="top|center"
             android:id="@+id/num_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="top|center"
+            android:text="@string/Num4"
             android:textColor="#000000"
             android:textSize="40sp"
             android:textStyle="italic"/>
 
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Num5"
-
-            android:gravity="top|center"
             android:id="@+id/num_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="top|center"
+            android:text="@string/Num5"
             android:textColor="#000000"
             android:textSize="40sp"
             android:textStyle="italic"/>
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Num6"
-            android:gravity="top|center"
             android:id="@+id/num_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top|center"
+            android:text="@string/Num6"
             android:textColor="#000000"
             android:textSize="40sp"
             android:textStyle="italic" />
 
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Minus"
-            android:gravity="center"
             android:id="@+id/minus"
-            android:textColor="#000000"
-            android:textSize="40sp"
-            android:textStyle="italic" />
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Num1"
-
-            android:gravity="top|center"
-            android:id="@+id/num_1"
-            android:textColor="#000000"
-            android:textSize="40sp"
-            android:textStyle="italic"/>
-
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Num2"
-
-            android:gravity="top|center"
-            android:id="@+id/num_2"
-            android:textColor="#000000"
-            android:textSize="40sp"
-            android:textStyle="italic"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Num3"
-            android:gravity="top|center"
-            android:id="@+id/num_3"
-            android:textColor="#000000"
-            android:textSize="40sp"
-            android:textStyle="italic" />
-
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Multi"
             android:gravity="center"
+            android:text="@string/Minus"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/num_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="top|center"
+            android:text="@string/Num1"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:textStyle="italic"/>
+
+
+        <Button
+            android:id="@+id/num_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="top|center"
+            android:text="@string/Num2"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:textStyle="italic"/>
+        <Button
+            android:id="@+id/num_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top|center"
+            android:text="@string/Num3"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:textStyle="italic" />
+
+
+        <Button
             android:id="@+id/multi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/Multi"
             android:textColor="#000000"
             android:textSize="40sp"
             android:textStyle="italic" />
@@ -205,12 +204,12 @@
 
 
         <Button
+            android:id="@+id/clear"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Clear"
-            android:id="@+id/clear"
-
             android:gravity="top|center"
+
+            android:text="@string/Clear"
 
             android:textColor="@color/colorPrimary"
             android:textSize="40sp"
@@ -218,32 +217,32 @@
 
 
         <Button
+            android:id="@+id/num_0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Num0"
 
             android:gravity="top|center"
-            android:id="@+id/num_0"
+            android:text="@string/Num0"
             android:textColor="#000000"
             android:textSize="40sp"
             android:textStyle="italic"/>
         <Button
+            android:id="@+id/equal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Equal"
             android:gravity="top|center"
-            android:id="@+id/equal"
+            android:text="@string/Equal"
             android:textColor="#000000"
             android:textSize="40sp"
             android:textStyle="italic" />
 
 
         <Button
+            android:id="@+id/div"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Div"
             android:gravity="center"
-            android:id="@+id/div"
+            android:text="@string/Div"
             android:textColor="#000000"
             android:textSize="40sp"
             android:textStyle="italic" />
