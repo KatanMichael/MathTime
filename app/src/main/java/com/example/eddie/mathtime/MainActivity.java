@@ -10,6 +10,7 @@ public class MainActivity extends AppCompatActivity
 {
 
 
+    int a, b;
     int sum=0;
     String value;
     boolean Plus = false;
@@ -74,22 +75,27 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
-                    int a , b;
 
                 if(Plus)
                 {
-
                         {
                         String first = value.substring(0, value.indexOf('+'));
                         String second = value.substring(value.indexOf('+') + 1);
+
+                        if(second.equals(""))
+                        {
+                            b = 0;
+                        }
+
                         Plus = false;
                         Minus = false;
                         Multi = false;
                         Div = false;
                         if(first.equals(""))
                         {
-                            sum = Integer.parseInt(resultView.getText().toString())
-                                    + Integer.parseInt(second);
+                            a = Integer.parseInt(resultView.getText().toString());
+
+                            sum = a + b;
                         }else
                         {
                             sum = Integer.parseInt(first) + Integer.parseInt(second);

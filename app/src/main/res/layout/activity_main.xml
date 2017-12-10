@@ -24,7 +24,7 @@
         android:textStyle="italic"
 
 
-        android:id="@+id/inital_text" ></TextView>
+        android:id="@+id/inital_text" />
 
     <TextView
         android:layout_width="match_parent"
@@ -37,7 +37,7 @@
         android:padding="25dp"
 
         android:background="@drawable/drawable_back"
-        android:id="@+id/result" ></TextView>
+        android:id="@+id/result" />
 
 
 
@@ -55,7 +55,6 @@
             android:layout_height="wrap_content"
             android:text="@string/Num7"
 
-
             android:gravity="top|center"
             android:id="@+id/num_7"
             android:textColor="#000000"
@@ -63,7 +62,7 @@
             android:textStyle="italic"
 
 
-            ></Button>
+            />
 
 
         <Button
@@ -75,7 +74,7 @@
             android:id="@+id/num_8"
             android:textColor="#000000"
             android:textSize="40sp"
-            android:textStyle="italic"></Button>
+            android:textStyle="italic"/>
 
         <Button
             android:layout_width="wrap_content"
@@ -85,7 +84,7 @@
             android:id="@+id/num_9"
             android:textColor="#000000"
             android:textSize="40sp"
-            android:textStyle="italic" ></Button>
+            android:textStyle="italic" />
 
 
         <Button
@@ -96,7 +95,7 @@
             android:id="@+id/plus"
             android:textColor="#000000"
             android:textSize="40sp"
-            android:textStyle="italic" ></Button>
+            android:textStyle="italic" />
 
     </LinearLayout>
 
@@ -114,7 +113,7 @@
             android:id="@+id/num_4"
             android:textColor="#000000"
             android:textSize="40sp"
-            android:textStyle="italic"></Button>
+            android:textStyle="italic"/>
 
 
         <Button
@@ -126,7 +125,7 @@
             android:id="@+id/num_5"
             android:textColor="#000000"
             android:textSize="40sp"
-            android:textStyle="italic"></Button>
+            android:textStyle="italic"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -135,7 +134,7 @@
             android:id="@+id/num_6"
             android:textColor="#000000"
             android:textSize="40sp"
-            android:textStyle="italic" ></Button>
+            android:textStyle="italic" />
 
 
         <Button
@@ -146,7 +145,7 @@
             android:id="@+id/minus"
             android:textColor="#000000"
             android:textSize="40sp"
-            android:textStyle="italic" ></Button>
+            android:textStyle="italic" />
 
     </LinearLayout>
 
@@ -164,7 +163,7 @@
             android:id="@+id/num_1"
             android:textColor="#000000"
             android:textSize="40sp"
-            android:textStyle="italic"></Button>
+            android:textStyle="italic"/>
 
 
         <Button
@@ -176,7 +175,7 @@
             android:id="@+id/num_2"
             android:textColor="#000000"
             android:textSize="40sp"
-            android:textStyle="italic"></Button>
+            android:textStyle="italic"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -185,7 +184,7 @@
             android:id="@+id/num_3"
             android:textColor="#000000"
             android:textSize="40sp"
-            android:textStyle="italic" ></Button>
+            android:textStyle="italic" />
 
 
         <Button
@@ -196,7 +195,7 @@
             android:id="@+id/multi"
             android:textColor="#000000"
             android:textSize="40sp"
-            android:textStyle="italic" ></Button>
+            android:textStyle="italic" />
 
     </LinearLayout>
 
@@ -215,7 +214,7 @@
 
             android:textColor="@color/colorPrimary"
             android:textSize="40sp"
-            android:textStyle="italic"></Button>
+            android:textStyle="italic"/>
 
 
         <Button
@@ -227,7 +226,7 @@
             android:id="@+id/num_0"
             android:textColor="#000000"
             android:textSize="40sp"
-            android:textStyle="italic"></Button>
+            android:textStyle="italic"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -236,7 +235,7 @@
             android:id="@+id/equal"
             android:textColor="#000000"
             android:textSize="40sp"
-            android:textStyle="italic" ></Button>
+            android:textStyle="italic" />
 
 
         <Button
@@ -247,7 +246,7 @@
             android:id="@+id/div"
             android:textColor="#000000"
             android:textSize="40sp"
-            android:textStyle="italic" ></Button>
+            android:textStyle="italic" />
 
     </LinearLayout>
 
