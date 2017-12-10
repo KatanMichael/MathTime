@@ -1,7 +1,7 @@
 package com.example.eddie.mathtime;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -10,6 +10,9 @@ public class MainActivity extends AppCompatActivity
 {
 
 
+    int a, b;
+    int sign;
+    int chain;
     int sum=0;
     String value;
     boolean Plus = false;
@@ -74,22 +77,29 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
-                    int a , b;
 
                 if(Plus)
                 {
-
                         {
                         String first = value.substring(0, value.indexOf('+'));
                         String second = value.substring(value.indexOf('+') + 1);
-                        Plus = false;
+
+                        if(second.equals(""))
+                        {
+                            b = 0;
+                        }
+
+
                         Minus = false;
                         Multi = false;
                         Div = false;
+                            sign = 1;
                         if(first.equals(""))
                         {
-                            sum = Integer.parseInt(resultView.getText().toString())
-                                    + Integer.parseInt(second);
+                            a = Integer.parseInt(resultView.getText().toString());
+                            b = Integer.parseInt(second);
+                            sum = a + b;
+                            chain = b;
                         }else
                         {
                             sum = Integer.parseInt(first) + Integer.parseInt(second);
@@ -103,12 +113,16 @@ public class MainActivity extends AppCompatActivity
                     String first=value.substring(0,value.indexOf('-'));
                     String second=value.substring(value.indexOf('-')+1);
                     Plus = false;
-                    Minus = false;
+
                     Multi = false;
-                    Div = false;                    if(first.equals(""))
+                    Div = false;
+                    sign = 2;
+
+                    if (first.equals(""))
                     {
                         sum = Integer.parseInt(resultView.getText().toString())
                                 - Integer.parseInt(second);
+                        chain = Integer.parseInt(second);
                     }else
                     sum=Integer.parseInt(first)- Integer.parseInt(second);
                 }
@@ -119,11 +133,14 @@ public class MainActivity extends AppCompatActivity
                     String second=value.substring(value.indexOf('*')+1);
                     Plus = false;
                     Minus = false;
-                    Multi = false;
-                    Div = false;                    if(first.equals(""))
+
+                    Div = false;
+                    sign = 3;
+                    if (first.equals(""))
                     {
                         sum = Integer.parseInt(resultView.getText().toString())
                                 * Integer.parseInt(second);
+                        chain = Integer.parseInt(second);
                     }else {
                         sum = Integer.parseInt(first) * Integer.parseInt(second);
                     }
@@ -136,20 +153,52 @@ public class MainActivity extends AppCompatActivity
                     Plus = false;
                     Minus = false;
                     Multi = false;
-                    Div = false;                    if(first.equals(""))
+
+                    sign = 4;
+                    if (first.equals(""))
                     {
                         sum = Integer.parseInt(resultView.getText().toString())
                                 / Integer.parseInt(second);
+                        chain = Integer.parseInt(second);
                     }else
                     sum=Integer.parseInt(first)/ Integer.parseInt(second);
                 }
 
-                TextView val=(TextView) findViewById(R.id.inital_text);
+                if (!Plus && !Multi && !Minus && !Div) {
+
+                    b = Integer.parseInt(resultView.getText().toString());
+                    switch (sign) {
+                        case 1: {
+                            sum = chain + b;
+                            break;
+                        }
+                        case 2: {
+                            sum = b - chain;
+                            break;
+                        }
+                        case 3: {
+                            sum = chain * b;
+                            break;
+                        }
+                        case 4: {
+                            sum = b / chain;
+                            break;
+                        }
+
+                    }
+                }
+
+                TextView val = findViewById(R.id.inital_text);
                 val.setText(value);
 
-                TextView result=(TextView)findViewById(R.id.result);
+                TextView result = findViewById(R.id.result);
                 result.setText(Integer.toString(sum));
                 value="";
+                Plus = false;
+                Minus = false;
+                Multi = false;
+                Div = false;
+
 
             }
         });
@@ -160,11 +209,11 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
-                TextView val=(TextView) findViewById(R.id.inital_text);
+                TextView val = findViewById(R.id.inital_text);
                 val.setText(" ");
                 value="";
-
-                TextView result=(TextView) findViewById(R.id.result);
+                a = b = 0;
+                TextView result = findViewById(R.id.result);
                 result.setText(" ");
 
             }
@@ -195,7 +244,7 @@ public class MainActivity extends AppCompatActivity
                     Div=true;
             }
             value = value + sign ;
-            TextView val = (TextView) findViewById(R.id.inital_text);
+            TextView val = findViewById(R.id.inital_text);
             val.setText(value);
         }
     }
@@ -216,7 +265,7 @@ public class MainActivity extends AppCompatActivity
         {
 
             value = value + num ;
-            TextView val = (TextView) findViewById(R.id.inital_text);
+            TextView val = findViewById(R.id.inital_text);
             val.setText(value);
         }
 
