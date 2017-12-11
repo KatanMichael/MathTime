@@ -43,7 +43,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
+        android:paddingTop="10dp"
 
         >
 
@@ -53,6 +53,7 @@
             android:id="@+id/num_7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/button_drawable"
 
             android:gravity="top|center"
             android:text="@string/Num7"
@@ -68,7 +69,7 @@
             android:id="@+id/num_8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
+            android:background="@drawable/button_drawable"
             android:gravity="top|center"
             android:text="@string/Num8"
             android:textColor="#000000"
@@ -79,6 +80,7 @@
             android:id="@+id/num_9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/button_drawable"
             android:gravity="top|center"
             android:text="@string/Num9"
             android:textColor="#000000"
@@ -90,6 +92,7 @@
             android:id="@+id/plus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/button_drawable"
             android:gravity="center"
             android:text="@string/Plus"
             android:textColor="#000000"
@@ -101,13 +104,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="5dp"
         >
 
         <Button
             android:id="@+id/num_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
+            android:background="@drawable/button_drawable"
             android:gravity="top|center"
             android:text="@string/Num4"
             android:textColor="#000000"
@@ -119,7 +123,7 @@
             android:id="@+id/num_5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
+            android:background="@drawable/button_drawable"
             android:gravity="top|center"
             android:text="@string/Num5"
             android:textColor="#000000"
@@ -129,6 +133,7 @@
             android:id="@+id/num_6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/button_drawable"
             android:gravity="top|center"
             android:text="@string/Num6"
             android:textColor="#000000"
@@ -140,6 +145,7 @@
             android:id="@+id/minus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/button_drawable"
             android:gravity="center"
             android:text="@string/Minus"
             android:textColor="#000000"
@@ -151,13 +157,14 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp">
 
         <Button
             android:id="@+id/num_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
+            android:background="@drawable/button_drawable"
             android:gravity="top|center"
             android:text="@string/Num1"
             android:textColor="#000000"
@@ -169,7 +176,7 @@
             android:id="@+id/num_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
+            android:background="@drawable/button_drawable"
             android:gravity="top|center"
             android:text="@string/Num2"
             android:textColor="#000000"
@@ -179,6 +186,7 @@
             android:id="@+id/num_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/button_drawable"
             android:gravity="top|center"
             android:text="@string/Num3"
             android:textColor="#000000"
@@ -190,6 +198,7 @@
             android:id="@+id/multi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/button_drawable"
             android:gravity="center"
             android:text="@string/Multi"
             android:textColor="#000000"
@@ -200,15 +209,16 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp">
 
 
         <Button
             android:id="@+id/clear"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/button_drawable"
             android:gravity="top|center"
-
             android:text="@string/Clear"
 
             android:textColor="@color/colorPrimary"
@@ -220,7 +230,7 @@
             android:id="@+id/num_0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
+            android:background="@drawable/button_drawable"
             android:gravity="top|center"
             android:text="@string/Num0"
             android:textColor="#000000"
@@ -230,6 +240,7 @@
             android:id="@+id/equal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/button_drawable"
             android:gravity="top|center"
             android:text="@string/Equal"
             android:textColor="#000000"
@@ -241,6 +252,7 @@
             android:id="@+id/div"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/button_drawable"
             android:gravity="center"
             android:text="@string/Div"
             android:textColor="#000000"
